@@ -1,0 +1,133 @@
+<!--
+Name: Matthew Bunio
+Course: Software Development 20S
+Teacher: Mr. Hardman
+School: Pembina Trails Early College
+Date Last Modified: May 5 -->
+
+<!--
+    Sources 
+    - grid = Mr Hardman
+-->
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>The Big Three</title>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="initial-scale=1.0, user-scalable=yes"/>   
+        <style>
+         h1 {
+                text-align: center;
+                font-size: 40px;
+            }
+
+        
+        h2 {
+                text-align: left;
+                font-size: 30px;
+            }
+
+        h3 {  
+                font-size: 20px;
+                position: relative;
+                left: 75px;
+                top: -450px;
+            }
+        
+
+        h4 {
+                font-size: 20px;
+                position: relative;
+                left: 575px;
+                top: -25px;
+            }
+        
+        h5  {
+                font-size: 20px;
+                position: relative;
+                left: 1050px;
+                top: -552px;
+        }
+
+        
+        p{
+            font-size: 20px;
+            
+        }
+
+
+        #gallery {
+                display: -ms-grid;
+                display: grid;
+                width: 100%;
+                height: 100%;
+                -ms-grid-row: repeat(auto-fit, 1fr);
+                grid-row: repeat(auto-fit, 1fr);
+                grid-template-rows: repeat(auto-fit, 1fr);
+                -ms-grid-column: repeat(auto-fit, 1fr);
+                grid-column: repeat(auto-fit, 1fr);
+                grid-template-columns: repeat(auto-fit, 1fr);
+                -ms-grid-gap: 10px;
+                grid-gap: 10px;
+                gap: 10px;
+        }
+
+
+        #gallery a, #gallery img {
+                width: 630px;
+                height: 450px;
+            }
+            #pic1 {
+                
+                grid-area: 3 / 2 / span 2 / span 2;
+            }
+            #pic2 {
+                
+                grid-area: 1 / 3 / span 2 / span 2;
+            }
+
+            #pic3 {
+               
+                grid-area: 1 / 1 / span 2 / span 2;
+            }
+        </style> 
+        <h1>The Big Three</h1>
+        <h2>What is the Big Three</h2>
+    </head>
+    <body>
+        <p>
+          The Big three is a collection of anime based off of how good the manga(the books which anime gets
+          its content from) is selling. The big three is known to change over the course of time but this website
+          will take a look at the second generation of the Big three.
+        </p>
+        
+        <div id="gallery">
+            <a id="pic1" href="https://static.wikia.nocookie.net/naruto/images/0/09/Naruto_newshot.png/revision/latest?cb=20210223094656">
+                <img src="https://static.wikia.nocookie.net/naruto/images/0/09/Naruto_newshot.png/revision/latest?cb=20210223094656"/>
+            </a>
+            <a id="pic2" href="https://i.pinimg.com/474x/84/aa/0d/84aa0dadd6cbd869bf40397a1a59e4cb.jpg">
+                <img src="https://i.pinimg.com/474x/84/aa/0d/84aa0dadd6cbd869bf40397a1a59e4cb.jpg"/>
+            </a>
+            <a id="pic3" href="https://otakukart.com/wp-content/uploads/2020/05/bleach-anime-1200x900.jpeg">
+                <img src="https://otakukart.com/wp-content/uploads/2020/05/bleach-anime-1200x900.jpeg"/>
+            </a>
+        </div>
+        <nav>
+            <ul>
+                <h3>
+                   <a href="Bleach.html"><li>Bleach</li></a>
+                </h3>
+                <h4>
+                    <a href="Naruto.html"><li>Naruto</li></a>
+                </h4>
+                <h5>
+                    <a href="One-Piece.html"><li>One Piece</li></a> 
+                </h5>
+                
+            </ul>
+        </nav>
+    </body>
+</html>
+     
