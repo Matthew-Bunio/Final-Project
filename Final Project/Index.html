@@ -19,7 +19,9 @@ Date Last Modified: May 5 -->
         <meta name="viewport" content="initial-scale=1.0, user-scalable=yes"/>   
         <style>
 
-
+        /** 
+        used to style the body tag
+        */
         body {
                  background-color: black;
                 color: white;
@@ -28,18 +30,25 @@ Date Last Modified: May 5 -->
                 background-attachment: fixed;
              }
 
-
+        /** 
+        used to style the heading tags
+        */
          h1 {
                 text-align: center;
                 font-size: 40px;
             }
 
-        
+        /** 
+        used to style the heading tags
+        */
         h2 {
                 text-align: left;
                 font-size: 30px;
             }
 
+        /** 
+        used to style the heading tags
+        */
         h3 {  
                 font-size: 20px;
                 position: relative;
@@ -47,7 +56,9 @@ Date Last Modified: May 5 -->
                 top: -450px;
             }
         
-
+        /** 
+        used to style the heading tags
+        */
         h4 {
                 font-size: 20px;
                 position: relative;
@@ -55,6 +66,9 @@ Date Last Modified: May 5 -->
                 top: -25px;
             }
         
+        /** 
+        used to style the heading tags
+        */
         h5  {
                 font-size: 20px;
                 position: relative;
@@ -62,13 +76,17 @@ Date Last Modified: May 5 -->
                 top: -552px;
         }
 
-        
+        /** 
+        used to style the paragraph tags
+        */
         p{
             font-size: 20px;
             
         }
 
-
+        /** 
+        used to style the gallery or grid
+        */
         #gallery {
                 display: -ms-grid;
                 display: grid;
@@ -85,7 +103,9 @@ Date Last Modified: May 5 -->
                 gap: 10px;
         }
 
-
+        /** 
+        used to style the grids size and position 
+        */
         #gallery a, #gallery img {
                 width: 630px;
                 height: 450px;
@@ -102,6 +122,29 @@ Date Last Modified: May 5 -->
             #pic3 {
                
                 grid-area: 1 / 1 / span 2 / span 2;
+            }
+
+            /** 
+            used to style the animations properties 
+            */
+            div {
+                width: 100px;
+                height: 100px;
+                background-color: black;
+                position: relative;
+                animation-name: example;
+                animation-duration: 4s;
+            }
+            
+            /** 
+            used to style the movement of the animation 
+            */
+            @keyframes example {
+                 0%   {background-color:black; left:0px; top:0px;}
+                 25%  {background-color:black; left:200px; top:0px;}
+                 50%  {background-color:black; left:200px; top:200px;}
+                 75%  {background-color:black; left:0px; top:200px;}
+                 100% {background-color:black; left:0px; top:0px;}
             }
         </style> 
         <h1>The Big Three</h1>
